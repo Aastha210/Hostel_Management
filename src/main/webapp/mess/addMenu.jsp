@@ -3,12 +3,9 @@
 <head>
     <title>Add Menu</title>
 
-    <!-- CONNECT NEW CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-
-    <!-- NAVBAR -->
     <div class="navbar">
         <a href="../index.jsp">Home</a>
         <a href="../students/list.jsp">Student</a>

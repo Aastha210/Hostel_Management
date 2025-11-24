@@ -3,7 +3,6 @@
 <head>
     <title>Fees</title>
 
-    <!-- CONNECT NEW CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <div class="navbar">
@@ -17,16 +16,12 @@
         <a href="../mess/viewMenu.jsp">Menu</a>
     </div>
 
-<!-- PAGE TITLE -->
 <div class="page-title">Fees Payments</div>
 
-<!-- ADD FEE BUTTON -->
 <div class="container">
     <a class="btn" href="addFee.jsp">Add Fee</a>
 </div>
 
-
-<!-- FEE PAYMENTS TABLE -->
 <div class="container">
     <table>
         <tr>

@@ -8,7 +8,6 @@
 </head>
 
 <body>
-    <!-- NAVBAR -->
     <div class="navbar">
         <a href="../index.jsp">Home</a>
         <a href="../students/list.jsp">Student</a>

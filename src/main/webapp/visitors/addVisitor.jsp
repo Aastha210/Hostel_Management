@@ -3,7 +3,6 @@
 <head>
     <title>Add Visitor</title>
 
-    <!-- CONNECT NEW CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <div class="navbar">

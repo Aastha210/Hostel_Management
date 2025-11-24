@@ -5,7 +5,6 @@
 <head>
     <title>Add Fee Payment</title>
 
-    <!-- CONNECT NEW CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -23,15 +22,10 @@
             <a href="../mess/viewMenu.jsp">Menu</a>
         </div>
  <div class="page-title">Fees Payment</div>
-    <!-- PAGE CONTENT -->
+
     <div class="container">
-
-
-
-
         <form action="addFee_action.jsp" method="post">
 
-            <!-- Student Dropdown -->
             <div class="form-row">
                 <label>Student</label>
                 <select name="student_id" required>
@@ -52,19 +46,16 @@
                 </select>
             </div>
 
-            <!-- Amount -->
             <div class="form-row">
                 <label>Amount</label>
                 <input type="number" step="0.01" name="amount" required>
             </div>
 
-            <!-- Date -->
             <div class="form-row">
                 <label>Paid On</label>
                 <input type="date" name="paid_on" required>
             </div>
 
-            <!-- Submit Button -->
             <button class="btn" type="submit">Save</button>
 
         </form>

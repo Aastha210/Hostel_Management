@@ -3,7 +3,6 @@
 <head>
     <title>Add Student</title>
 
-    <!-- CONNECT NEW CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <div class="navbar">
@@ -27,7 +26,7 @@
     <div class="form-row"><label>Join Date<br></label><input type="date" name="join_date"></div>
     <div class="form-row"><label>Assign Room<br></label>
       <select name="room_id">
-        <option value="">--None--</option>
+        <option value=""></option>
         <%
           try (java.sql.PreparedStatement rp = con.prepareStatement("SELECT id,room_no FROM rooms WHERE occupied < capacity");
                java.sql.ResultSet rrs = rp.executeQuery()) {

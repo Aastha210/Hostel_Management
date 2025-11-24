@@ -28,7 +28,7 @@ try (java.sql.PreparedStatement pst = con.prepareStatement(sql)) {
   if (room_id==null || room_id.isEmpty()) pst.setNull(7, java.sql.Types.INTEGER); else pst.setInt(7, Integer.parseInt(room_id));
   pst.setInt(8,id);
   pst.executeUpdate();
-  // update room occupancy adjustments
+
   if (oldRoomIdStr==null && room_id!=null && !room_id.isEmpty()) {
     java.sql.PreparedStatement up = con.prepareStatement("UPDATE rooms SET occupied=occupied+1 WHERE id=?"); up.setInt(1,Integer.parseInt(room_id)); up.executeUpdate();
   } else if (oldRoomIdStr!=null && (room_id==null || room_id.isEmpty())) {

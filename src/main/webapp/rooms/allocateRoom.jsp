@@ -3,7 +3,6 @@
 <head>
     <title>Add Room</title>
 
-    <!-- CONNECT NEW CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <div class="navbar">
@@ -21,7 +20,7 @@
   <form action="allocate_action.jsp" method="post">
     <div class="form-row"><label>Student</label>
       <select name="student_id" required>
-        <option value="">--Select student--</option>
+        <option value=""></option>
         <%
           try (java.sql.PreparedStatement sp = con.prepareStatement("SELECT id,name FROM students WHERE room_id IS NULL");
                java.sql.ResultSet srs = sp.executeQuery()) {
@@ -33,7 +32,7 @@
     </div>
     <div class="form-row"><label>Room</label>
       <select name="room_id" required>
-        <option value="">--Select room--</option>
+        <option value=""></option>
         <%
            try (java.sql.PreparedStatement rp = con.prepareStatement("SELECT id,room_no,capacity,occupied FROM rooms WHERE occupied < capacity");
                 java.sql.ResultSet rrs = rp.executeQuery()) {

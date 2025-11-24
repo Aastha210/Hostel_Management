@@ -2,7 +2,7 @@
 <%
 int id = Integer.parseInt(request.getParameter("id"));
 try {
-  // adjust room occupancy if assigned
+
   java.sql.PreparedStatement p1 = con.prepareStatement("SELECT room_id FROM students WHERE id=?");
   p1.setInt(1,id);
   java.sql.ResultSet r1 = p1.executeQuery();

@@ -5,14 +5,11 @@
 <head>
     <title>Submit Complaint</title>
 
-    <!-- CONNECT NEW CSS -->
-
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
     <div class="navbar">
             <a href="../index.jsp">Home</a>
             <a href="../students/list.jsp">Student</a>
@@ -24,10 +21,7 @@
             <a href="../mess/viewMenu.jsp">Menu</a>
         </div>
 <h1 class="page-title">Submit Complaint</h1>
-    <!-- PAGE CONTENT -->
     <div class="container">
-
-
 
         <form action="submit_action.jsp" method="post">
 

@@ -3,7 +3,6 @@
 <head>
     <title>Edit</title>
 
-    <!-- CONNECT NEW CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <div class="navbar">
@@ -35,7 +34,7 @@ if (!rs.next()) { out.println("<p>Not found</p>"); return; }
     <div class="form-row"><label>Join Date</label><br><input type="date" name="join_date" value="<%= (rs.getDate("join_date")==null)?"":rs.getDate("join_date").toString() %>"></div>
     <div class="form-row"><label>Assign Room</label>
       <select name="room_id">
-        <option value="">--None--</option>
+        <option value=""></option>
         <%
           java.sql.PreparedStatement rp = con.prepareStatement("SELECT id,room_no FROM rooms");
           java.sql.ResultSet rrs = rp.executeQuery();

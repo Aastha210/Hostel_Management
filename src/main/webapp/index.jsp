@@ -85,8 +85,6 @@
 </head>
 
 <body>
-
-    <!-- NAVBAR -->
     <div class="navbar">
         <a href="dashboard.jsp">Dashboard</a>
         <a href="students/list.jsp">Students</a>
@@ -100,10 +98,8 @@
         <a class="btn secondary" href="login.jsp">Admin Login</a>
     </div>
 
-    <!-- PAGE TITLE -->
     <div class="page-title">Hostel Management System</div>
 
-    <!-- DASHBOARD BUTTONS -->
     <div class="container dashboard-buttons">
         <a class="btn" href="students/list.jsp">Students</a>
         <a class="btn" href="rooms/status.jsp">Rooms</a>
